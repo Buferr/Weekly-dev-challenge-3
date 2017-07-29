@@ -1,0 +1,121 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;*/
+.body
+{
+	margin: 0;
+	padding: 0;
+}
+.header__title, .menu__item, .portfolio__title, .portfolio__view, .offer__title, .stile__title, .offer__title, .latest__title, .lcontent__title, .lcontent__view, .values__title, .vtile__title, .clients__title, .contact, .contact-us__title, .posts__title, .tweets__title
+{
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+.offer__list-item, .posts__list-item
+{
+	text-transform: capitalize;
+}
+.services__title, .stile__title, .latest__title, .lcontent__title, .llist-item__title, .values__title, .vtile__title, .clients__title, .footer__copy
+{
+	color: #555555;
+}
+.menu__item, .services__subtitle, .stile__paragraph, .latest__subtitle, .lcontent__paragraph, .llist-item__paragraph, .values__subtitle, .vtile__paragraph, .clients__subtitle, .client__paragraph
+{
+	color:  #777777;
+	font-weight: 400;
+	font-family: 'Roboto Slab', serif;
+
+}
+.portfolio__subtitle, .offer__paragraph, .offer__list-item
+{
+	color:  #cccccc;
+	font-weight: 400;
+	font-family: 'Roboto Slab', serif;
+}
+.header__title
+{
+	color: #555555;
+}
+.portfolio__title, .portfolio__view, .offer__title, .offer__learn-more, .contact__title, .contact__us, .contact-us__title, .posts__title, .tweets__title, .tweets__hashtag
+{
+	color: #fff;
+}
+.contact-us__list-item, .posts__list-item, .tweets__list-item
+{
+	color: #c7c7c7;
+}
+.client__name, .offer__amp, .lcontent__view
+{
+	color: #7cc576;
+}
+.tweets__date
+{
+	font-size: 0.75rem;
+}
+.menu__item, .footer__copy, .stile__paragraph, .vtile__paragraph
+{
+	font-size: 0.875rem;
+}
+.portfolio__view, .offer__learn-more
+{
+	font-size: 0.927rem;
+}
+.lcontent__link, .offer__paragraph, .offer__list-item, .lcontent__paragraph, .llist-item__paragraph, .contact-us__list-item, .posts__list-item, .tweets__text, .tweets__hashtag 
+{
+	font-size: 1rem;
+}
+.header__title, .stile__title, .lcontent__title, .llist-item__title, .vtile__title, .contact__us, .contact-us__title, .posts__title, .tweets__title, .client__name
+{
+	font-size: 1.125rem;
+}
+.portfolio__subtitle, .services__subtitle, .latest__subtitle, .values__subtitle, .clients__subtitle
+{
+	font-size: 1.25rem;
+}
+.client__paragraph
+{
+	font-size: 1.375rem;
+}
+.services__title, .offer__title, .latest__title, .values__title, .clients__title, .contact__title
+{
+	font-size: 2.5rem;
+}
+.portfolio__title
+{
+	font-size: 3.75rem;
+}
+a
+{
+	text-decoration: none;
+}
+a:visited
+{
+	color: inherit;
+}
+.header, .portfolio, .services, .offer, .latest, .values, .clients, .contact, .technologies, .info, .footer
+{
+	width: 100%
+	box-sizing: border-box;
+
+}
+.header, .portfolio, .services, .offer, .latest, .values, .clients, .contact, .technologies, .info, .footer, .menu__list
+{
+	display: flex;
+}
+.header
+{
+	justify-content: space-around;
+	align-items: center;
+	height: 7.1875rem;
+}
+.menu
+{
+	width: 26.875rem;
+}
+.menu__list
+{
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}

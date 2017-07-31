@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	width="29px" height="29px" viewBox="0 0 29 29">
-<path fillRule="evenodd" d="M 14.07 0.43C 21.86 0.43 28.16 6.74 28.16 14.52 28.16 22.31 21.86 28.62 14.07 28.62 6.29 28.62-0.02 22.31-0.02 14.52-0.02 6.74 6.29 0.43 14.07 0.43Z" fill="rgb(123,196,117)"/></svg>
+	width="14px" height="16px" viewBox="0 0 14 16">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+<feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/>
+<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+</filter>
+<image x="0" y="0" width="14" height="16" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACUSURBVBjTddFREcMgDIDhv1MQCTgYEpDQOUACTioBCdsUbA5aB6sD5oA9DFrC1uSF48sFchkYscDKysKbLiyJXHImYDSHDb8ZdUHqOGF3jKXpxOuXw3blSmHmUdGphr6cpXL7ninsKl4bnhFii079dkJI7TheDWQxMDQseM4YwPLkwkFEMgZOf/EOuCO8Qb8AvSuBD9nxW5XOCiqGAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA3LTMxVDA2OjAyOjU0KzAwOjAwsNMFRgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wNy0zMVQwNjowMjo1NCswMDowMMGOvfoAAAAASUVORK5CYII=" /></svg>

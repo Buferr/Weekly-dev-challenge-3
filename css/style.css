@@ -1,15 +1,9 @@
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif;*/
-.body, .menu__list, .portfolio__title, .portfolio__subtitle, .services__title, .services__subtitle, .stile__title, .stile__paragraph, .offer__title, .offer__paragraph, .offer__list, .lcontent__subtitle, .lcontent__paragraph, .lcontent__list, .llist-item__title, .llist-item__paragraph, .latest__title, .latest__subtitle, .values__title, .values__subtitle, .vtile__title, .vtile__paragraph, .lcontent__title, .contact__title, .clients__title
+.body, .menu__list, .portfolio__title, .portfolio__subtitle, .services__title, .services__subtitle, .stile__title, .stile__paragraph, .offer__title, .offer__paragraph, .offer__list, .lcontent__subtitle, .lcontent__paragraph, .lcontent__list, .llist-item__title, .llist-item__paragraph, .latest__title, .latest__subtitle, .values__title, .values__subtitle, .vtile__title, .vtile__paragraph, .lcontent__title, .contact__title, .clients__title, .contact-us__list, .posts__list, .tweets__list, .tweets__text, .tweets__hashtag, .tweets__date
 {
 	margin: 0;
 	padding: 0;
-}
-.header__title, .menu__item, .portfolio__title, .portfolio__view, .offer__title, .stile__title, .offer__title, .latest__title, .lcontent__title, .lcontent__view, .values__title, .vtile__title, .clients__title, .contact, .contact-us__title, .posts__title, .tweets__title, .services__title, .offer__learn-more
-{
-	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
 }
 .offer__list-item, .posts__list-item
 {
@@ -19,7 +13,7 @@ font-family: 'Roboto Slab', serif;*/
 {
 	color: #555555;
 }
-.menu__item, .services__subtitle, .stile__paragraph, .latest__subtitle, .lcontent__paragraph, .llist-item__paragraph, .values__subtitle, .vtile__paragraph, .clients__subtitle, .client__paragraph
+.menu__item, .services__subtitle, .stile__paragraph, .latest__subtitle, .lcontent__paragraph, .llist-item__paragraph, .values__subtitle, .vtile__paragraph, .clients__subtitle, .client__paragraph, .contact-us__list-item, .posts__list-item, .tweets__list-item
 {
 	color:  #777777;
 	font-weight: 400;
@@ -31,6 +25,12 @@ font-family: 'Roboto Slab', serif;*/
 	color:  #cccccc;
 	font-weight: 400;
 	font-family: 'Roboto Slab', serif;
+}
+.header__title, .menu__item, .portfolio__title, .portfolio__view, .offer__title, .stile__title, .offer__title, .latest__title, .lcontent__title, .lcontent__view, .values__title, .vtile__title, .clients__title, .contact, .contact-us__title, .posts__title, .tweets__title, .services__title, .offer__learn-more
+{
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 .header__title
 {
@@ -97,23 +97,23 @@ a:visited
 	width: 100%;
 	box-sizing: border-box;
 }
-.header, .portfolio, .services, .offer, .values, .clients, .contact, .technologies, .info, .footer, .menu__list, .header__circle, .header__logo, .portfolio__content, .portfolio__header, .portfolio__view, .services__content, .stile, .offer__content, .offer__wrapper, .offer__learn-more, .offer__list-item, .offer__list-icon, .lcontent, .llist-item__icon, .llist-item, .llist-item__icon, .values__content, .vtile, .vtile__icon, .client, .contact__us
+.header, .portfolio, .services, .offer, .values, .clients, .contact, .technologies, .info, .footer, .menu__list, .header__circle, .header__logo, .portfolio__content, .portfolio__header, .portfolio__view, .services__content, .stile, .offer__content, .offer__wrapper, .offer__learn-more, .offer__list-item, .offer__list-icon, .lcontent, .llist-item__icon, .llist-item, .llist-item__icon, .values__content, .vtile, .vtile__icon, .client, .contact__us, .technologies__content, .info__content, .social, .social__wrap
 {
 	display: flex;
 }
-.header, .header__logo, .header__circle, .portfolio, .portfolio__content, .portfolio__header, .portfolio__view, .services, .services__content, .stile, .offer__wrapper, .offer__learn-more, .offer__list-item, .offer__list-icon, .llist-item__icon, .llist-item, .llist-item__icon, .values, .vtile, .vtile__icon, .clients, .client, .contact, .contact__us
+.header, .header__logo, .header__circle, .portfolio, .portfolio__content, .portfolio__header, .portfolio__view, .services, .services__content, .stile, .offer__wrapper, .offer__learn-more, .offer__list-item, .offer__list-icon, .llist-item__icon, .llist-item, .llist-item__icon, .values, .vtile, .vtile__icon, .clients, .client, .contact, .contact__us, .technologies__content, .footer, .social__wrap
 {
 	align-items: center;
 }
-.header__circle, .portfolio, .portfolio__header, .portfolio__view, .offer__learn-more, .offer__list-icon, .llist-item__icon, .llist-item__icon, .vtile__icon, .contact__us, .contact
+.header__circle, .portfolio, .portfolio__header, .portfolio__view, .offer__learn-more, .offer__list-icon, .llist-item__icon, .llist-item__icon, .vtile__icon, .contact__us, .contact, .technologies, .info, .social__wrap
 {
 	justify-content: center;
 }
-.header, .services
+.header, .services, .footer
 {
 	justify-content: space-around;
 }
-.header__logo, .menu__list, .portfolio__content, .services__content, .stile, .offer__content, .lcontent, .vtile, .values, .values__content, .client, .clients
+.header__logo, .menu__list, .portfolio__content, .services__content, .stile, .offer__content, .lcontent, .vtile, .values, .values__content, .client, .clients, .technologies__content, .info__content, .social
 {
 	justify-content: space-between;
 }
@@ -141,7 +141,7 @@ a:visited
 {
 	width: 26.875rem;
 }
-.menu__list, .offer__list, .lcontent__list
+.menu__list, .offer__list, .lcontent__list, .contact-us__list, .posts__list, .tweets__list
 {
 	list-style-type: none;
 }
@@ -312,17 +312,20 @@ a:visited
 {
 	margin-left: 44px;
 }
-.client__words--1::before
+.client__words--1::before, .client__words--2::after
 {
 	content:"";
 	position: absolute;
-	right: 100%;
 	top: 74.5px;
 	width: 0;
 	height: 0;
 	border-top: 12px solid transparent;
-	border-right: 21px solid #f9f9f9;
 	border-bottom: 12px solid transparent;
+}
+.client__words--1::before
+{
+	right: 100%;
+	border-right: 21px solid #f9f9f9;
 }
 .client__words--2
 {
@@ -330,15 +333,8 @@ a:visited
 }
 .client__words--2::after
 {
-	content:"";
-	position: absolute;
 	left: 100%;
-	top: 74.5px;
-	width: 0;
-	height: 0;
-	border-top: 12px solid transparent;
 	border-left: 21px solid #f9f9f9;
-	border-bottom: 12px solid transparent;
 }
 .client__picture
 {
@@ -363,4 +359,90 @@ a:visited
 .technologies
 {
 	height: 10.3125rem;
+}
+.technologies__content
+{
+	width: 765px;
+}
+.info
+{
+	height: 22.8125rem;
+	background: #222;
+}
+.info__content
+{
+	width: 61rem;
+	margin-top: 60px;
+}
+.contact-us__list-item
+{
+	padding-left: 38px;
+}
+.contact-us__list-item--1
+{
+	background: url("../img/contact-us__location.svg") no-repeat;
+}
+.contact-us__list-item--2
+{
+	background: url("../img/contact-us__phone.svg") no-repeat left center;
+	padding: 17px 0 19px 38px;
+}
+.contact-us__list-item--3
+{
+	background: url("../img/contact-us__email.svg") no-repeat left center;
+}
+.posts__list-item
+{
+	padding-left: 40px;
+	margin-bottom: 19px;
+}
+.posts__list-item--1, .posts__list-item--3, .posts__list-item--4
+{
+	background: url("../img/posts__news.svg") no-repeat left top;
+}
+.posts__list-item--2
+{
+	background: url("../img/posts__photo.svg") no-repeat left top;
+}
+.posts__list-item--5
+{
+	background: url("../img/posts__media.svg") no-repeat left top;
+	margin: 0;
+}
+.tweets
+{
+	width: 17rem;
+}
+.tweets__list-item
+{
+	padding-left: 41px;
+	background: url("../img/tweets__icon.svg") no-repeat;
+}
+.tweets__list-item--1
+{
+	margin-bottom: 17px;
+}
+.contact-us__title, .posts__title, .tweets__title
+{
+	margin: 0 0 29px 0;
+}
+.footer
+{
+	height: 100px;
+}
+.social
+{
+	width: 191px;
+}
+.social__wrap
+{
+	border-radius: 50%;
+	background-color: #222222;
+	width: 2.5625rem;
+	height: 2.5625rem;
+}
+.social__icon
+{
+	color: #fff;
+	font-size: 1.5rem;
 }

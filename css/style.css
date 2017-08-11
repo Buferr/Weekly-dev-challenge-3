@@ -1,6 +1,6 @@
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif;*/
-.body, .menu__list, .portfolio__title, .portfolio__subtitle, .services__title, .services__subtitle, .stile__title, .stile__paragraph, .offer__title, .offer__paragraph, .offer__list, .lcontent__subtitle, .lcontent__paragraph, .lcontent__list, .llist-item__title, .llist-item__paragraph, .latest__title, .latest__subtitle, .values__title, .values__subtitle, .vtile__title, .vtile__paragraph, .lcontent__title, .contact__title, .clients__title, .contact-us__list, .posts__list, .tweets__list, .tweets__text, .tweets__hashtag, .tweets__date
+.body, .menu__list, .portfolio__title, .portfolio__subtitle, .services__title, .services__subtitle, .stile__title, .stile__paragraph, .offer__title, .offer__paragraph, .offer__list, .lcontent__subtitle, .lcontent__paragraph, .lcontent__list, .llist-item__title, .llist-item__paragraph, .latest__title, .latest__subtitle, .values__title, .values__subtitle, .vtile__title, .vtile__paragraph, .lcontent__title, .contact__title, .clients__title, .contact-us__list, .posts__list, .tweets__list, .tweets__text, .tweets__hashtag, .tweets__date, .hamburger-menu__list
 {
 	margin: 0;
 	padding: 0;
@@ -13,7 +13,7 @@ font-family: 'Roboto Slab', serif;*/
 {
 	color: #555555;
 }
-.menu__item, .services__subtitle, .stile__paragraph, .latest__subtitle, .lcontent__paragraph, .llist-item__paragraph, .values__subtitle, .vtile__paragraph, .clients__subtitle, .client__paragraph, .contact-us__list-item, .posts__list-item, .tweets__list-item
+.menu__item, .services__subtitle, .stile__paragraph, .latest__subtitle, .lcontent__paragraph, .llist-item__paragraph, .values__subtitle, .vtile__paragraph, .clients__subtitle, .client__paragraph, .contact-us__list-item, .posts__list-item, .tweets__list-item, .hamburger-menu__item
 {
 	color:  #777777;
 	font-weight: 400;
@@ -26,7 +26,7 @@ font-family: 'Roboto Slab', serif;*/
 	font-weight: 400;
 	font-family: 'Roboto Slab', serif;
 }
-.header__title, .menu__item, .portfolio__title, .portfolio__view, .offer__title, .stile__title, .offer__title, .latest__title, .lcontent__title, .lcontent__view, .values__title, .vtile__title, .clients__title, .contact, .contact-us__title, .posts__title, .tweets__title, .services__title, .offer__learn-more
+.header__title, .menu__item, .portfolio__title, .portfolio__view, .offer__title, .stile__title, .offer__title, .latest__title, .lcontent__title, .lcontent__view, .values__title, .vtile__title, .clients__title, .contact, .contact-us__title, .posts__title, .tweets__title, .services__title, .offer__learn-more, .hamburger-menu__item
 {
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
@@ -87,6 +87,7 @@ font-family: 'Roboto Slab', serif;*/
 a
 {
 	text-decoration: none;
+	color: inherit;
 }
 a:visited
 {
@@ -105,7 +106,7 @@ a:visited
 {
 	align-items: center;
 }
-.header__circle, .portfolio, .portfolio__header, .portfolio__view, .offer__learn-more, .offer__list-icon, .llist-item__icon, .llist-item__icon, .vtile__icon, .contact__us, .contact, .technologies, .info, .social__wrap
+.header__circle, .portfolio, .portfolio__header, .portfolio__view, .offer__learn-more, .offer__list-icon, .llist-item__icon, .llist-item__icon, .vtile__icon, .contact__us, .contact, .technologies, .info, .social__wrap, .hamburger-menu__item
 {
 	justify-content: center;
 }
@@ -124,6 +125,12 @@ a:visited
 .header
 {
 	height: 7.1875rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 100;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 .header__logo
 {
@@ -141,7 +148,32 @@ a:visited
 {
 	width: 26.875rem;
 }
-.menu__list, .offer__list, .lcontent__list, .contact-us__list, .posts__list, .tweets__list
+.hamburger-menu__list
+{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	position: fixed;
+	top: 4rem;
+	left: 0;
+	z-index: 100;
+}
+.hamburger-menu__item
+{
+	width: 100%;
+	background: #fff;
+	padding: 1rem 0;
+	font-size: 1.5rem;
+}
+.hamburger-menu, .hamburger-menu__list
+{
+	display: none;
+}
+.hamburger-menu__list--show, .hamburger-menu__item
+{
+	display: flex;
+}
+.menu__list, .offer__list, .lcontent__list, .contact-us__list, .posts__list, .tweets__list, .hamburger-menu__list
 {
 	list-style-type: none;
 }
@@ -150,6 +182,7 @@ a:visited
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);
 	background: url("../img/portfolio-bg.jpg") no-repeat center center;
 	height: 33.125rem;
+	margin-top: 7.1875rem;
 }
 .portfolio__content
 {
@@ -293,6 +326,18 @@ a:visited
 	height: 5.3125rem;
 	border-radius: 50%;
 	border: 3px solid #777777;
+}
+.vtile__line
+{
+	position: relative;
+}
+.vtile__line--1
+{
+	right: 62px;
+}
+.vtile__line--2
+{
+	left: 62px;
 }
 .clients
 {
@@ -445,4 +490,233 @@ a:visited
 {
 	color: #fff;
 	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1065px)
+{
+	.offer__content
+	{
+		margin: 0;
+	}
+	.offer__wrapper
+	{
+		padding: 0 0.5rem;
+	}
+	.latest
+	{
+		background: #fff;
+	}
+}
+@media screen and (max-width: 965px)
+{	
+	.services, .values, .clients
+	{
+		padding: 0 0.5rem;
+		height: auto;
+	}
+	.services__content--2, .values__content
+	{
+		width: 100%;
+		flex-flow: column nowrap;
+	}
+	.services__content--1, .values__header, .clients__header
+	{
+		margin: 4rem 0;
+	}
+	.stile, .vtile, .client
+	{
+		margin: 0 0 2rem 0;
+	}
+	.values__content
+	{
+		height: auto;
+		align-items: center;
+	}
+	.vtile__line, .client__words--1::before, .client__words--2::after
+	{
+		display: none;
+	}
+	.vtile__title
+	{
+		margin: 1rem 0;
+	}
+	.client--1
+	{
+		flex-direction: column;
+	}
+	.client--2
+	{
+		flex-direction: column-reverse;
+	}
+	.client__words
+	{
+		margin: 1rem 0 0 0;
+	}
+	.contact, .info
+	{
+		padding: 0 0.5rem;
+	}
+	.contact__header
+	{
+		text-align: center;
+	}
+
+}
+@media screen and (max-width: 825px)
+{
+	.technologies
+	{
+		padding: 0 0.5rem;
+	}
+	.technologies__content
+	{
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.info
+	{
+		height: auto;
+
+	}
+	.info__content
+	{	
+		width: 100%;
+		flex-wrap: wrap;
+		/*justify-content: center;*/
+	}
+	.posts
+	{
+		margin: 0 0.5rem;
+	}
+	.info__tile
+	{
+		margin-bottom: 2.5rem;
+	}
+	.offer__side
+	{
+		display: none;
+	}
+	.offer__content
+	{
+		width: 100%;
+		align-items: center;
+	}
+	.offer__title
+	{
+		text-align: center;
+	}
+	.latest
+	{
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+	.lcontent
+	{
+		margin: 5.375rem 0 0 0;
+	}
+	.offer__paragraph
+	{
+		text-align: center;
+	}
+
+}
+@media screen and (max-width: 660px)
+{	
+	.portfolio__title
+	{
+		font-size: 2.25rem;
+	}
+	.services__title, .offer__title, .latest__title, .values__title, .clients__title, .contact__title
+	{
+		font-size: 1.8rem;
+	}
+	.client__words
+	{
+		width: 100%;
+	}
+	.client__paragraph
+	{
+		font-size: 1rem;
+	}
+	.client__name
+	{
+		font-size: 0.8rem;
+	}
+	.menu, .menu__list
+	{
+		display: none;
+	}
+	.hamburger-menu
+	{
+		display: block;
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+	.header
+	{
+		height: 4rem;
+	}
+	.offer__wrapper
+	{
+		padding: 5rem 0.5rem;
+		background-size: cover;
+	}
+	.offer__content
+	{	
+		height: 34rem;
+	}
+	.portfolio
+	{
+		margin-top: 4rem;
+	}
+	.contact__title
+	{
+		margin-top: 5rem;
+	}
+	.latest
+	{
+		padding: 6.25rem 0.5rem;
+	}
+	.lcontent
+	{
+		width: 100%;
+		align-items: center;
+		text-align: center;
+	}
+	.llist-item
+	{
+		flex-direction: column;		
+	}
+	.llist-item__icon
+	{
+		margin: 0;
+		margin-bottom: 0.75rem;
+	}
+	.lcontent__paragraph, .llist-item
+	{
+		margin-bottom: 2rem;
+	}
+	.footer
+	{
+		flex-direction: column;
+		height: 11rem;
+	}
+	.clients__title, .portfolio__subtitle, .services__title, .services__subtitle
+	{
+		text-align: center;
+	}
+	.technologies, .lcontent, .latest, .offer, .client__words, .contact
+	{
+		height: auto;
+	}
+	.technologies__content
+	{
+		margin: 1rem 0;
+	}
+	.contact__us
+	{
+		margin-bottom: 3rem;
+	}
 }

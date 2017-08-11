@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -13,17 +14,27 @@
 		<nav class="header__nav">
 			<div class="menu">
 				<ul class="menu__list">
-					<li class="menu__item"><a href="" class="menu__link">home</a></li>
-					<li class="menu__item"><a href="" class="menu__link">about</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">home</a></li>
+					<li class="menu__item"><a href="#a" class="menu__link">about</a></li>
 					<li class="menu__item"><a href="" class="menu__link">blog</a></li>
-					<li class="menu__item"><a href="" class="menu__link">portfolio</a></li>
-					<li class="menu__item"><a href="" class="menu__link">contact</a></li>
+					<li class="menu__item"><a href="#p" class="menu__link">portfolio</a></li>
+					<li class="menu__item"><a href="#c" class="menu__link">contact</a></li>
 				</ul>
 			</div>
+			<i class="hamburger-menu fa fa-bars"></i>
 		</nav>
 	</header>
+	<nav class="hamburger-menu">
+		<ul class="hamburger-menu__list">
+			<a href="#" class="hamburger-menu__link"><li class="hamburger-menu__item">home</li></a>
+			<a href="#a" class="hamburger-menu__link"><li class="hamburger-menu__item">about</li></a>
+			<a href="" class="hamburger-menu__link"><li class="hamburger-menu__item">blog</li></a>
+			<a href="#p" class="hamburger-menu__link"><li class="hamburger-menu__item">portfolio</li></a>
+			<a href="#c" class="hamburger-menu__link"><li class="hamburger-menu__item">contact</li></a>
+		</ul>
+	</nav>
 	<!-- portfolio -->
-	<section class="portfolio">
+	<section class="portfolio" id="p">
 		<div class="portfolio__content">
 			<header class="portfolio__header"><h2 class="portfolio__title">creative digital solutions</h2></header>
 			<p class="portfolio__subtitle">Proin iaculis purus consequat sem cure.</p>
@@ -55,7 +66,7 @@
 		</div>
 	</section>
 	<!-- offer -->
-	<section class="offer">
+	<section class="offer" id="a">
 		<div class="offer__side"><img src="img/offer-gear.svg" alt="gear icon" class="offer__side-img"></div>
 		<div class="offer__wrapper">
 			<div class="offer__content">
@@ -121,9 +132,9 @@
 			</div>
 			<div class="vtile">
 				<div class="vtile__icon">
-					<img src="" alt="" class="vtile__line vtile__line--1">
+					<img src="img/values__line.svg" alt="" class="vtile__line vtile__line--1">
 					<img src="img/vtile__img-graph.svg" alt="graph icon" class="vtile__img vtile__img--2">
-					<img src="" alt="" class="vtile__line vtile__line--2">
+					<img src="img/values__line.svg" alt="" class="vtile__line vtile__line--2">
 				</div>
 				<h3 class="vtile__title">quality over quantity</h3>
 				<p class="vtile__paragraph">Proin iaculis consequat sem cure digni ssim. Donec portitiora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
@@ -141,7 +152,7 @@
 			<h2 class="clients__title">our awesome clients</h2>
 			<p class="clients__subtitle">Proin iaculis purus consequat sem cure.</p>
 		</header>
-		<div class="client">
+		<div class="client client--1">
 			<div class="client__picture"></div>
 			<div class="client__words client__words--1">
 				<blockquote class="client__quote">
@@ -150,7 +161,7 @@
 				<p class="client__name">- Jamie Richardson, Founder of Cocoa Media</p>
 			</div>
 		</div>
-		<div class="client">
+		<div class="client client--2">
 			<div class="client__words client__words--2">
 				<blockquote class="client__quote">
 					<p class="client__paragraph">"Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus."</p>
@@ -161,7 +172,7 @@
 		</div>
 	</section>
 	<!-- contact -->
-	<section class="contact">
+	<section class="contact" id="c">
 		<header class="contact__header">
 			<h2 class="contact__title">ready to talk about your next project?</h2>
 		</header>
@@ -179,7 +190,7 @@
 	<!-- info -->
 	<section class="info">
 		<div class="info__content">
-			<div class="contact-us">
+			<div class="info__tile contact-us">
 				<h3 class="contact-us__title">contact us</h3>
 				<ul class="contact-us__list">
 					<li class="contact-us__list-item contact-us__list-item--1">55 Main St.<br>Toronto, ON<br>MH 3A5</li>
@@ -187,7 +198,7 @@
 					<li class="contact-us__list-item contact-us__list-item--3"><a href="mailto: hello@treehouse.com" class="contact-us__email">hello@treehouse.com</a></li>
 				</ul>
 			</div>
-			<div class="posts">
+			<div class="info__tile posts">
 				<h3 class="posts__title">latest posts</h3>
 				<ul class="posts__list">
 					<a href="" class="posts__link"><li class="posts__list-item posts__list-item--1">made with love in toronto</li></a>
@@ -197,7 +208,7 @@
 					<a href="" class="posts__link"><li class="posts__list-item posts__list-item--5">learn web design in 30 days!</li></a>
 				</ul>
 			</div>
-			<div class="tweets">
+			<div class="info__tile tweets">
 				<h3 class="tweets__title">latest tweets</h3>
 				<ul class="tweets__list">
 					<a href="" class="tweets__link"><li class="tweets__list-item tweets__list-item--1">
@@ -225,5 +236,6 @@
 		</div>
 		<p>Coded by Gorzeliński</p>
 	</footer>
+	<script type="text/javascript" src="js/javascript.js"></script>
 </body>
 </html>

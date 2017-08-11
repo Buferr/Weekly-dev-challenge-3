@@ -52,7 +52,7 @@ font-family: 'Roboto Slab', serif;*/
 {
 	font-size: 0.75rem;
 }
-.menu__item, .footer__copy, .stile__paragraph, .vtile__paragraph
+.menu__item, .footer__copy, .stile__paragraph, .vtile__paragraph, .hamburger-menu__item
 {
 	font-size: 0.875rem;
 }
@@ -162,8 +162,13 @@ a:visited
 {
 	width: 100%;
 	background: #fff;
+<<<<<<< HEAD
 	padding: 1rem 0;
 	font-size: 1.5rem;
+=======
+	padding: 0.5rem 0;
+
+>>>>>>> master
 }
 .hamburger-menu, .hamburger-menu__list
 {

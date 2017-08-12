@@ -148,6 +148,10 @@ a:visited
 {
 	width: 26.875rem;
 }
+.menu__item:hover
+{
+	color: #000;
+}
 .hamburger-menu__list
 {
 	display: flex;
@@ -200,6 +204,10 @@ a:visited
 	height: 3.75rem;
 	background: #7cc576;
 	border-radius: 50px;
+}
+.portfolio__view:hover, .offer__learn-more:hover
+{
+	background: #51824e;
 }
 .services
 {
@@ -299,6 +307,11 @@ a:visited
 .lcontent__arrow
 {
 	margin-left: 0.4375rem;
+	transition: margin 0.5s ease-in-out;
+}
+.lcontent__link:hover > .lcontent__arrow
+{
+	margin-left: 1.5rem;
 }
 .values
 {
@@ -401,6 +414,11 @@ a:visited
 	height: 2.9375rem;
 	border-radius: 7px;
 }
+.contact__us:hover
+{
+	border-color: #777;
+	color: #777;
+}
 .technologies
 {
 	height: 10.3125rem;
@@ -486,12 +504,35 @@ a:visited
 	width: 2.5625rem;
 	height: 2.5625rem;
 }
+.social__wrap--twitter:hover, .social__wrap--printerest:hover
+{
+	background: #fff;
+}
 .social__icon
 {
 	color: #fff;
 	font-size: 1.5rem;
 }
-
+.social__icon--printerest
+{
+	font-size: 3rem;
+}
+.social__wrap:hover > .social__icon--twitter
+{
+	color: #00aced;
+}
+.social__link:hover > .social__wrap--facebook
+{
+	background-color: #3b5998;
+}
+.social__wrap:hover > .social__icon--printerest
+{
+	color: #cb2027;
+}
+.social__wrap--google:hover
+{
+	background-color: #d34836;
+}
 @media screen and (max-width: 1065px)
 {
 	.offer__content
